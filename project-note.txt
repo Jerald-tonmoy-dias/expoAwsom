@@ -1,0 +1,3 @@
+com.jtd.expoAwsom
+
+jtd_awsomExpo
