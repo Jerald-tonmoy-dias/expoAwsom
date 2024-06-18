@@ -62,9 +62,12 @@ const VideoCard = ({
           useNativeControls
           shouldPlay
           onPlaybackStatusUpdate={(status) => {
-            if (status.didJustFinish) {
+            if (!status.isLoaded) {
               setPlay(false);
             }
+            // if (status.didJustFinish) {
+            //   setPlay(false);
+            // }
           }}
         />
       ) : (
